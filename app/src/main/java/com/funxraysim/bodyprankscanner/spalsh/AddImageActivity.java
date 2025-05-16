@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -28,13 +27,10 @@ public class AddImageActivity extends BaseActivity {
 
         binding.toolbarLayout.headerTitle.setText("Add Image");
         binding.toolbarLayout.btnBack.setOnClickListener(v -> onBackPressed());
-        // Add Image click
-        binding.btnAddImage.setOnClickListener(v -> openGallery());
-
-        // Next button click
         binding.btnNext.setOnClickListener(v -> {
+
             if (!isImageSelected) {
-                Toast.makeText(this, "Add image first", Toast.LENGTH_SHORT).show();
+                openGallery();
             } else if (!isDoneState) {
                 // Change to done state
                 binding.btnNext.setImageResource(R.drawable.img_done);
@@ -61,6 +57,8 @@ public class AddImageActivity extends BaseActivity {
             Uri imageUri = data.getData();
             binding.btnAddImage.setImageURI(imageUri);
             binding.imgTxtPreview.setImageResource(R.drawable.img_add_image_preview_txt);
+            binding.btnNext.setImageResource(R.drawable.img_done);
+            isDoneState = true;
             isImageSelected = true;
         }
     }

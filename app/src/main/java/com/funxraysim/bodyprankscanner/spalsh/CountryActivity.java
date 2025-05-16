@@ -54,14 +54,12 @@ public class CountryActivity extends BaseActivity {
     }
 
     private void setupLanguageList() {
-        languageList.add(new LanguageModel("Hindi", R.drawable.img_hindi, true));
-        languageList.add(new LanguageModel("Japan", R.drawable.img_japan, false));
-        languageList.add(new LanguageModel("Korea", R.drawable.img_korea, false));
-        languageList.add(new LanguageModel("French", R.drawable.img_french, false));
-        languageList.add(new LanguageModel("German", R.drawable.img_german, false));
-        languageList.add(new LanguageModel("Russian", R.drawable.img_russian, false));
-        languageList.add(new LanguageModel("Italian", R.drawable.img_italian, false));
-        languageList.add(new LanguageModel("Chinese", R.drawable.img_chinese, false));
+        languageList.add(new LanguageModel("India", R.drawable.img_india, true));
+        languageList.add(new LanguageModel("Pakistan", R.drawable.img_pakistan, false));
+        languageList.add(new LanguageModel("Indonesia ", R.drawable.img_indonesia, false));
+        languageList.add(new LanguageModel("Vietnam", R.drawable.img_vietnam, false));
+        languageList.add(new LanguageModel("Nepal", R.drawable.img_nepal, false));
+
     }
 
     @Override

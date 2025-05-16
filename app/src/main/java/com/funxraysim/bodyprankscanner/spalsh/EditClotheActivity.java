@@ -27,6 +27,7 @@ public class EditClotheActivity extends BaseActivity {
     private Uri downloadedImageUri;
 
     private int currentDrawableId = R.drawable.img_cloth_1; // Default
+    private int currentDrawableId1 = R.drawable.img_cloth_button_1; // Default
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +41,12 @@ public class EditClotheActivity extends BaseActivity {
 
         binding.txtName.setText(name);
         binding.imgBackground.setImageResource(currentDrawableId);
+        binding.clothBtns.setImageResource(currentDrawableId1);
 
         // Cloth buttons
-        binding.btnCloth1.setOnClickListener(v -> updateCloth(R.drawable.img_cloth_1));
-        binding.btnCloth2.setOnClickListener(v -> updateCloth(R.drawable.img_cloth_2));
-        binding.btnCloth3.setOnClickListener(v -> updateCloth(R.drawable.img_cloth_3));
+        binding.btnCloth1.setOnClickListener(v -> updateCloth(R.drawable.img_cloth_1, R.drawable.img_cloth_button_1));
+        binding.btnCloth2.setOnClickListener(v -> updateCloth(R.drawable.img_cloth_2, R.drawable.img_cloth_button_2));
+        binding.btnCloth3.setOnClickListener(v -> updateCloth(R.drawable.img_cloth_3, R.drawable.img_cloth_button_3));
 
         // Save button
         binding.btnSave.setOnClickListener(v -> {
@@ -75,9 +77,11 @@ public class EditClotheActivity extends BaseActivity {
         });
     }
 
-    private void updateCloth(int drawableId) {
+    private void updateCloth(int drawableId, int drawableId1) {
         currentDrawableId = drawableId;
+        currentDrawableId1 = drawableId1;
         binding.imgBackground.setImageResource(drawableId);
+        binding.clothBtns.setImageResource(drawableId1);
         downloadedImageUri = null; // Reset so image can be downloaded again
     }
 

@@ -217,14 +217,5 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/btnNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginVertical="@dimen/_10sdp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/img_next" />
 
 </LinearLayout>

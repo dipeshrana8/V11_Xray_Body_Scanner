@@ -22,7 +22,7 @@
             android:layout_marginStart="@dimen/_10sdp"
             android:adjustViewBounds="true"
 
-            android:src="@drawable/img_hindi"
+            android:src="@drawable/img_india"
             android:visibility="visible" />
 
         <TextView

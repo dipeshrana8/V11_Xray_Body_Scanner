@@ -24,15 +24,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/img_skin_tone" />
-
-
             <FrameLayout
                 android:id="@+id/frameNative"
                 android:layout_width="match_parent"
@@ -41,6 +32,79 @@
                 android:layout_marginVertical="@dimen/_5sdp"
 
                 android:minHeight="@dimen/_180sdp" />
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/btnCloth0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/img_vector_0" />
+
+                <ImageView
+                    android:id="@+id/btnCloth1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/img_vector_1" />
+
+                <ImageView
+                    android:id="@+id/btnCloth2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/_5sdp"
+
+                    android:src="@drawable/img_vector_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/btnCloth3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/img_vector_3" />
+
+                <ImageView
+                    android:id="@+id/btnCloth4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/img_vector_4" />
+
+                <ImageView
+                    android:id="@+id/btnCloth5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/_5sdp"
+
+                    android:src="@drawable/img_vector_5" />
+            </LinearLayout>
 
 
         </LinearLayout>

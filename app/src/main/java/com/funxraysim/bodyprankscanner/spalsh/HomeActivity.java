@@ -1,5 +1,7 @@
 package com.funxraysim.bodyprankscanner.spalsh;
 
+import static android.view.View.GONE;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -21,7 +23,7 @@ public class HomeActivity extends BaseActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.toolbarLayout.headerTitle.setText("Body Scanner");
-        binding.toolbarLayout.btnBack.setOnClickListener(v -> onBackPressed());
+        binding.toolbarLayout.btnBack.setVisibility(GONE);
 
         binding.btnFullBodyScan.setOnClickListener(v -> {
 

@@ -59,12 +59,12 @@ public class AgeActivity extends BaseActivity {
     }
 
     private void setupLanguageList() {
-        languageList.add(new LanguageModel("15-25", R.drawable.img_hindi, true));
-        languageList.add(new LanguageModel("26-35", R.drawable.img_japan, false));
-        languageList.add(new LanguageModel("36-45", R.drawable.img_korea, false));
-        languageList.add(new LanguageModel("46-55", R.drawable.img_french, false));
-        languageList.add(new LanguageModel("56-65", R.drawable.img_german, false));
-        languageList.add(new LanguageModel("66-75", R.drawable.img_russian, false));
+        languageList.add(new LanguageModel("15-25", R.drawable.img_india, true));
+        languageList.add(new LanguageModel("26-35", R.drawable.img_india, false));
+        languageList.add(new LanguageModel("36-45", R.drawable.img_india, false));
+        languageList.add(new LanguageModel("46-55", R.drawable.img_india, false));
+        languageList.add(new LanguageModel("56-65", R.drawable.img_india, false));
+        languageList.add(new LanguageModel("66-75", R.drawable.img_india, false));
 
     }
 
